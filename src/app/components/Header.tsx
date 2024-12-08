@@ -9,8 +9,8 @@ function Header() {
     <div className='w-[full] h-[58px] border-outline-5 border-[#DEDEDE] bg-[#ffffff] flex justify-between items-center'>
 
         {/* logo */}
-        <div className='text-bold text-[25px] ml-8'><p>Bandage</p></div>
-        
+        <div className='text-bold text-[25px] ml-8'>
+            <p>Bandage</p></div>
         
             <div>
                 <ul className='w-[360px] h-[24px] flex gap-[20px]  mr-10  text-[#000000]'>
