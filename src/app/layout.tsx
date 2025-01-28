@@ -1,15 +1,17 @@
 import TopHeader from "./components/TopHeader";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
+
 
 
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+ import localFont from "next/font/local";
 import "./globals.css";
 
 
 const montserrat = Montserrat({
+
   subsets: ['latin'], 
   weight: ['400', '700'], 
 });

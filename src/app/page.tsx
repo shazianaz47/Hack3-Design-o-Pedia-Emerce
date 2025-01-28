@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import EditorsPick from "./components/Editorspic";
 import Hero from "./components/Hero ";
 import FeaturedProduct from "./components/FeaturedProduct";

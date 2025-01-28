@@ -16,7 +16,7 @@ function About () {
         </div>
 
         <div className=' right-[135px]'>
-        <img 
+        <Image 
         src="/Images/about1.png" 
         alt="girl" 
         width={500} 

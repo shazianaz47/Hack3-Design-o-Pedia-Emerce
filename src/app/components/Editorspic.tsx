@@ -7,7 +7,7 @@ const EditorsPick = () => {
       <div className='max-w-7xl  max-auto'>
         {/* Title */}
         <div className=" text-center  mb-6">
-        <h2 className= "text-xl font-semibold" >EDITOR'S PICK </h2>
+        <h2 className="text-xl font-semibold">EDITORS PICK </h2>
         <p className="text-gray-600 "> 
          Problems trying to resolve the conflict between</p>
       </div>
