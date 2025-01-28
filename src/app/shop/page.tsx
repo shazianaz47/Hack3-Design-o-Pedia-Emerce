@@ -44,17 +44,13 @@ const ProductCards : React.FC = () => {
           alert(`${product.title} has been added to your cart!` );
     };
 
-    const truncateDescription = (description:string) =>{
-        return description.length>100?description.substring(0,100) +"..." : description;
-    };
-
     useEffect(()=> {
         fetchProducts ();
     },[]);
     
     return(
     <div className="min-h-screen bg-gray-50 p-10">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Product From API's Data</h2>
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Product From APIs Data</h2>
       
        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8">{product.map((product) =>(
          <div 
