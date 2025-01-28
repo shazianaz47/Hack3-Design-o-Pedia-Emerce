@@ -1,22 +1,32 @@
 import Image from "next/image";
-import TopHeader from "./components/TopHeader";
-import Header from "./components/Header";
+import EditorsPick from "./components/Editorspic";
 import Hero from "./components/Hero ";
-import Footer from "./components/Footer";
+import FeaturedProduct from "./components/FeaturedProduct";
+import GreenDiv from "./components/GreenDiv";
+import Universe from "./components/Universe";
+import FeatturedPost from "./components/FeaturedPost";
+import SHOP from "./shop/page";
+
+
+
+
 
 export default function Home() {
   return (
     <div>
-     <TopHeader/>
-     <Header/>
-     <br/>
-     <Hero/>
-
-     <br/><br/>
-     <Footer/>
-
-    </div>
     
+   <Hero/>
+   <br/>
+   <EditorsPick/>
+   <FeaturedProduct/>
+   <SHOP/>    
+   <GreenDiv/>
+   <Universe/>
+   <FeatturedPost/>
+   
+   </div>
+     
+     
    
   );
 }
