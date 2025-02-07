@@ -1,33 +1,59 @@
+
+ import MeetOurTeam from "./MeetOurTeam";
+import ProblemSolving from "./ProblemSolving";
+import StateSection from "./StateSection";
+import VideoSection from "./VideoSection";
+import WorkWithUs from "./workWithUs";
+
 import React from 'react'
 import Image from 'next/image'
 
-function About () {
+function About() {
   return (
-    <main className='w-[1050px] h-[545px] gap-[80px]' >
+    <main className="max-w-6xl mx-auto px-4 py-12 ">
+      {/* Background Pink Circle */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/8 -translate-y-1/3 w-64 h-64 md:w-96 md:h-96 bg-pink-300 rounded-full opacity-50 -z-10"></div> 
 
-     <div className=' flex w-[1044px] h-[321px] relative left-[135px] gap-[30px] pt-112'>
-
-        <div className='w-[599px] h-[321px] pt-8  relative left-[135px] gap-[12px]'>
-        <p className='w-[154px] h-[24px]'>ABOUT COMPANY</p><br/>
-        <h1 className='w-[542px] h-[80px]'>ABOUT US</h1>
-        <p className='w-[376px] h-[60px]'>We know how large objects will act, 
-        but things on a small scale</p>
-        <button className='w-[195] h-[52] bg-[#23A6F0] gap-10 rounded-[5px]'>Get Quote Now</button>
-        </div>
-
-        <div className=' right-[135px]'>
-        <Image 
-        src="/Images/about1.png" 
-        alt="girl" 
-        width={500} 
-        height={700} 
+      <div className="flex mt-10 flex-col md:flex-row items-center md:items-start gap-10"> 
         
-       />
+        {/* Text Section */}
+        <div className=" flex-1 mt-10 text-center md:text-left p-10">
+          <p className="text-sm text-gray-500 p-3 ">ABOUT COMPANY</p>
+          <h1 className="text-2xl md:text-4xl font-bold mt-2 p-3">ABOUT US</h1>
+          <p className="text-gray-600 mt-4 max-w-md mx-auto md:mx-0">
+            We know how large objects will act, but things on a small scale.
+          </p>
+          <button className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg">
+            Get Quote Now
+          </button>
         </div>
- 
-    </div>
+        {/* Image Section */}
+        <div className="flex-1 flex justify-center relative ">
+          <Image 
+            src="/Images/about1.png" 
+            alt="girl" 
+            width={500} 
+            height={500} 
+            className="w-full max-w-xs md:max-w-md lg:max-w-lg"
+          />
+        </div>
+      </div>
+
+      <div>
+        <ProblemSolving/>
+      </div>
+      <StateSection/>
+      <VideoSection/>
+      <MeetOurTeam/>
+      <WorkWithUs/>
+
+
+      
+
     </main>
   )
 }
 
 export default About
+
+

@@ -6,6 +6,7 @@ import { Product } from "@/app/types/Product";
 
 
 
+
 interface ProductPageProps{
     params:Promise<{slug:string}>
 }
@@ -17,14 +18,17 @@ async function getProduct(slug : string) : Promise<Product | null> {
              title,
              price,
              description,
-            image
+             image
     }`,{slug}
  );  
 }
 
-export default async function ProductPage({params} : ProductPageProps){
-const {slug} = await params;
-const product = await getProduct(slug);
+ export default async function ProductPage({params} : ProductPageProps){
+ const {slug} = await params;
+ const product = await getProduct(slug);
+ if (!product){
+    return <div className="text-center text-red-500">Product Not Found</div>;
+ }
 
 return (
     <div className="max-w-7xl mx-auto px-4">
@@ -40,15 +44,22 @@ return (
                     />
                 )}
             </div>
-            <div className="flex flex-col gap-8"> 
+             <div className="flex flex-col gap-8"> 
                 <h1 className="text-4xl font-bold">
-                    {product?.title}
-                </h1>
-                <p className="text-2xl font-sans">
-                    {product?.price}
-                </p>
-            </div>
+                    {product.title}
+                 </h1>
+                 <p className="text-2xl font-sans">
+                    ${product.price}                </p>
+            <p className="text-lg text-gray-600">
+                {product.description}</p>
+             </div>
         </div>
     </div>
 )
 }
+
+
+
+
+
+

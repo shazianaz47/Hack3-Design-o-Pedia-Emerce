@@ -5,7 +5,7 @@ function Hero () {
     <main >
     <div className="relative bg-cover bg-center bg-no-repeat h-screen"
     
-      style={{backgroundImage:" url('/images/cover1.jpg')",}} > 
+      style={{backgroundImage:" url('images/cover1.jpg')"}} > 
       
           <div className=' w-full justify-evenly pl-[20%] pt-[15%]'>
            {/* Text Content */}

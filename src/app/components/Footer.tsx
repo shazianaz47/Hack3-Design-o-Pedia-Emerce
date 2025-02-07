@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-wrap justify-between items-start space-y-6 md:space-y-0">
           {/* Logo and Social Icons */}
-          <div>
+          <div className="w-full md:w-1/4">
             <h2 className="text-2xl font-bold text-gray-800">Bandage</h2>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="text-blue-500 hover:text-blue-600">
@@ -23,9 +23,9 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div className="flex flex-wrap space-x-16">
+          <div className="w-full md:w-3/4 md:flex justify-between space-x-16">
             {/* Column 1 */}
-            <div>
+            <div className="mt-6 md:mt-0">
               <h3 className="font-semibold text-gray-800">Company Info</h3>
               <ul className="mt-4 space-y-2">
                 <li><a href="#" className="hover:text-blue-500">About Us</a></li>
@@ -35,7 +35,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Column 2 */}
-            <div>
+            <div className="mt-6 md:mt-0">
               <h3 className="font-semibold text-gray-800">Legal</h3>
               <ul className="mt-4 space-y-2">
                 <li><a href="#" className="hover:text-blue-500">About Us</a></li>
@@ -45,7 +45,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Column 3 */}
-            <div>
+            <div className="mt-6 md:mt-0">
               <h3 className="font-semibold text-gray-800">Features</h3>
               <ul className="mt-4 space-y-2">
                 <li><a href="#" className="hover:text-blue-500">Business Marketing</a></li>
@@ -55,7 +55,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Column 4 */}
-            <div>
+            <div className="mt-6 md:mt-0">
               <h3 className="font-semibold text-gray-800">Resources</h3>
               <ul className="mt-4 space-y-2">
                 <li><a href="#" className="hover:text-blue-500">iOS & Android</a></li>
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
-          <div>
+          <div className="w-full md:w-1/4 mt-6 md:mt-0">
             <h3 className="font-semibold text-gray-800">Get In Touch</h3>
             <form className="mt-4">
               <div className="flex">
@@ -92,7 +92,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="mt-10 border-t pt-4 text-center text-sm text-gray-500">
-          Made With Love By Finland All Right Reserved
+          Made With Love By Shazia Naz All Right Reserved
         </div>
       </div>
     </footer>

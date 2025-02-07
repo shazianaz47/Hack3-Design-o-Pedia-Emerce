@@ -1,15 +1,20 @@
 import TopHeader from "./components/TopHeader";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Montserrat } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./components/Header";
+import {
+  ClerkProvider,
+ 
+} from '@clerk/nextjs'
 
 
 const montserrat = Montserrat({
 
   subsets: ["latin"], 
-  weight: ["400", "700"], 
+  weight: ["400", "700"],
+  variable: "--font-montserrat", 
 });
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -33,19 +38,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${montserrat.className} antialiased`}
-      >
-        <TopHeader/>
-        <Header/>
-         
-     
-        {children}
-
-        
-        <Footer/>
+    <ClerkProvider>
+      <html lang="en"className={montserrat.variable} >
+        <body>
+          
+          <TopHeader/>
+          <Header/>
+          {children}
+          <Footer/>
         </body>
-    </html>
+      </html>
+    </ClerkProvider>
   );
 }

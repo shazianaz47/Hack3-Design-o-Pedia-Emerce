@@ -5,6 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product } from "../types/Product";
 import { urlFor } from "@/sanity/lib/image";
+import ShopDev1 from  "./shopDev1";
+import ShopDev2 from "./shopDev2";
+import Label from "./label"
+import ComponyLogo from "./componyLogo";
+
 
 
 const sanity =createClient({
@@ -44,17 +49,34 @@ const ProductCards : React.FC = () => {
           alert(`${product.title} has been added to your cart!` );
     };
 
+
+
     useEffect(()=> {
         fetchProducts ();
     },[]);
     
     return(
+    <>
+
+
+
+        
+
+        <ShopDev1/>
+        <Label/>
+        <ComponyLogo/>
+        <ShopDev2/>
+        
+
+
+   
     <div className="min-h-screen bg-gray-50 p-10">
+        
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Product From APIs Data</h2>
       
        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8">{product.map((product) =>(
          <div 
-            key={product._id}
+             key={product._id}
             className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
 
            <Link href={`/product/${product.slug}`}>      
@@ -135,6 +157,7 @@ const ProductCards : React.FC = () => {
     )}
        </div>
     </div>
+ </>   
     );
 };
 export default ProductCards;
