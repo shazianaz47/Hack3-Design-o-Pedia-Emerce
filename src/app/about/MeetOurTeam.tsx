@@ -1,5 +1,6 @@
 import { FiInstagram, FiFacebook, FiTwitter } from "react-icons/fi";
 import ComponyLogo from "../shop/componyLogo";
+import Link from "next/link";
 
 
 const MeetOurTeam = () => {
@@ -20,15 +21,15 @@ const MeetOurTeam = () => {
           <h2 className="text-lg font-semibold mb-2">Username</h2>
           <h3 className="text-sm text-gray-500 mb-4">Profession</h3>
           <div className="flex gap-4">
-            <a href="#" className="text-blue-600 hover:text-blue-700">
+            <Link href="#" className="text-blue-600 hover:text-blue-700">
               <FiFacebook size={20} />
-            </a>
-            <a href="#" className="text-red-700 hover:text-blue-900">
+            </Link>
+            <Link href="#" className="text-red-700 hover:text-blue-900">
               <FiInstagram size={20} />
-            </a>
-            <a href="#" className="text-blue-300 hover:text-blue-600">
+            </Link>
+            <Link href="#" className="text-blue-300 hover:text-blue-600">
               <FiTwitter size={20} />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -46,15 +47,15 @@ const MeetOurTeam = () => {
           <h2 className="text-lg font-semibold mb-2">Username</h2>
           <h3 className="text-sm text-gray-500 mb-4">Profession</h3>
           <div className="flex gap-4">
-            <a href="#" className="text-blue-600 hover:text-blue-700">
+            <Link href="#" className="text-blue-600 hover:text-blue-700">
               <FiFacebook size={20} />
-            </a>
-            <a href="#" className="text-red-700 hover:text-blue-900">
+            </Link>
+            <Link href="#" className="text-red-700 hover:text-blue-900">
               <FiInstagram size={20} />
-            </a>
-            <a href="#" className="text-blue-300 hover:text-blue-600">
+            </Link>
+            <Link href="#" className="text-blue-300 hover:text-blue-600">
               <FiTwitter size={20} />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -73,15 +74,15 @@ const MeetOurTeam = () => {
           <h3 className="text-sm text-gray-500 mb-4">Profession</h3>
           <div className="flex gap-4">
 
-            <a href="#" className="text-blue-600 hover:text-blue-700">
+            <Link href="#" className="text-blue-600 hover:text-blue-700">
               <FiFacebook size={20} />
-            </a>
-            <a href="#" className="text-red-700 hover:text-blue-900">
+            </Link>
+            <Link href="#" className="text-red-700 hover:text-blue-900">
               <FiInstagram size={20} />
-            </a>
-            <a href="#" className="text-blue-300 hover:text-blue-600">
+            </Link>
+            <Link href="#" className="text-blue-300 hover:text-blue-600">
               <FiTwitter size={20} />
-            </a>
+            </Link>
           </div>
         </div>
 

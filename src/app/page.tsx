@@ -4,7 +4,6 @@ import FeaturedProduct from "./components/FeaturedProduct";
 import GreenDiv from "./components/GreenDiv";
 import Universe from "./components/Universe";
 import FeatturedPost from "./components/FeaturedPost";
-import SHOP from "./shop/page";
 import EditorsPick from "./components/Editorspic";
 
 
@@ -15,8 +14,7 @@ export default function Home() {
    <Hero/>
    <br/>
    <EditorsPick/>
-   <FeaturedProduct/>
-   <SHOP/>    
+   <FeaturedProduct/>    
    <GreenDiv/>
    <Universe/>
    <FeatturedPost/>

@@ -23,8 +23,8 @@ export default function FeaturedPosts() {
               <Image 
                 src={post.src} 
                 alt={`Post ${index + 1}`} 
-                width={400} 
-                height={250} 
+                width={300} 
+                height={300} 
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
@@ -50,5 +50,5 @@ export default function FeaturedPosts() {
         </div>
       </div>
     </section>
-  );
+  )
 }

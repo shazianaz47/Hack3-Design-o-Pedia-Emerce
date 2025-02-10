@@ -39,21 +39,14 @@ function About() {
         </div>
       </div>
 
-      <div>
         <ProblemSolving/>
-      </div>
       <StateSection/>
       <VideoSection/>
       <MeetOurTeam/>
       <WorkWithUs/>
-
-
-      
-
     </main>
   )
-}
-
+};
 export default About
 
 

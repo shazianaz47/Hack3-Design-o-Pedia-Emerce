@@ -5,8 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import {
-  ClerkProvider,
- 
+  ClerkProvider
 } from '@clerk/nextjs'
 
 
@@ -40,11 +39,13 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en"className={montserrat.variable} >
+        
         <body>
-          
           <TopHeader/>
           <Header/>
+          
           {children}
+
           <Footer/>
         </body>
       </html>

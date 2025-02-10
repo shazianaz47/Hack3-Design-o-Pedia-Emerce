@@ -13,8 +13,8 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full border-b border-gray-300 bg-white px-6 py-4 md:px-8">
-      <div className="flex justify-between items-center">
+    <header className="relative w-full z-50">
+      <div className="flex justify-between items-center p-2">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">Bandage</div>
 
@@ -28,19 +28,20 @@ function Header() {
 
         {/* Navigation Links (Hidden on Mobile) */}
         <nav
-          // className={`absolute md:relative top-16 left-0 w-full md:w-auto md:flex bg-white md:bg-transparent flex-col md:flex-row items-center gap-6 p-4 md:p-0 shadow-md md:shadow-none transition-transform ${
-          //   menuOpen ? "block" : "hidden"
-          // }`}
-        >
+         className={`fixed md:relative top-16 left-0 w-full md:w-auto md:flex bg-white md:bg-transparent flex-col md:flex-row items-center gap-6 p-4 md:p-0 shadow-md md:shadow-none transition-transform
+           ${
+           menuOpen ? "block" : "hidden"
+         }`}
+         >
           <ul className="flex flex-col md:flex-row items-center gap-6 text-gray-800">
-            <li><Link href="/">Home</Link></li>
+            <li><Link href="/"><span>Home</span></Link></li>
             <li className="flex items-center">
-              <Link href="/shop">Shop</Link> <IoMdArrowDropdown />
+              <Link href="/shop"><span>Shop</span></Link> <IoMdArrowDropdown />
             </li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/pages">Pages</Link></li>
+            <li><Link href="/about"><span>About</span></Link></li>
+            <li><Link href="/blog"><span>Blog</span></Link></li>
+            <li><Link href="/contact"><span>Contact</span></Link></li>
+            <li><Link href="/pages"><span>Pages</span></Link></li>
           </ul>
         </nav>
 
@@ -52,9 +53,9 @@ function Header() {
             <SignedIn>
             <UserButton />
             </SignedIn>
-          <SignedOut>
+           <SignedOut>
             <SignInButton />
-          </SignedOut>
+           </SignedOut>
             {/* <Link href="/">Login / Register</Link> */}
           </div>
 

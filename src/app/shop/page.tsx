@@ -60,8 +60,6 @@ const ProductCards : React.FC = () => {
 
 
 
-        
-
         <ShopDev1/>
         <Label/>
         <ComponyLogo/>

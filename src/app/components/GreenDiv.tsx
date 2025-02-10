@@ -30,8 +30,8 @@ function GreenDiv() {
           className="w-full md:w-1/2 h-64 md:h-auto bg-cover bg-center"
           style={{
             backgroundImage: "url('/images/Green1.png')",
-          }}
-        ></div>
+          }}>
+        </div>
       </div>
     </div>
   );
