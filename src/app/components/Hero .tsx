@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 function Hero () {
   return (
@@ -17,7 +18,7 @@ function Hero () {
                 <h6>but things on a small scale.</h6>
                 </div>
                 
-                <button className=' text-center mt-6 px-8 py-3 bg-green-500 text-white font-bold rounded hover:bg-green-600'>SHOP NOW</button>
+                <button className=' text-center mt-6 px-8 py-3 bg-green-500 text-white font-bold rounded hover:bg-green-600'><Link href="/shop">SHOP NOW</Link></button>
               </div>
           </div>
      </div>  

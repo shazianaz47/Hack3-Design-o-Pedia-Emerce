@@ -6,6 +6,7 @@ import Link from "next/link";
 const MeetOurTeam = () => {
   return (
     <div className="meet2n">
+      <Link href="/team"><h1  className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white  mt-10 p-5 text-center justify-between">Meet Our Team</h1></Link>
 
       <div className="aboutSec1 grid grid-cols-1 md:grid-cols-3 gap-[3.5rem] place-items-center py-20">
         {/* Team Member 1 */}

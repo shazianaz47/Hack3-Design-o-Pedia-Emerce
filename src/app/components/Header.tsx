@@ -13,7 +13,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative w-full z-50">
+    <header className=" relative w-full z-50">
       <div className="flex justify-between items-center p-2">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">Bandage</div>
@@ -28,7 +28,7 @@ function Header() {
 
         {/* Navigation Links (Hidden on Mobile) */}
         <nav
-         className={`fixed md:relative top-16 left-0 w-full md:w-auto md:flex bg-white md:bg-transparent flex-col md:flex-row items-center gap-6 p-4 md:p-0 shadow-md md:shadow-none transition-transform
+         className={`md:relative  w-full md:w-auto md:flex bg-white md:bg-transparent flex-col md:flex-row items-center gap-6 p-4 md:p-0 shadow-md md:shadow-none transition-transform
            ${
            menuOpen ? "block" : "hidden"
          }`}
@@ -41,7 +41,7 @@ function Header() {
             <li><Link href="/about"><span>About</span></Link></li>
             <li><Link href="/blog"><span>Blog</span></Link></li>
             <li><Link href="/contact"><span>Contact</span></Link></li>
-            <li><Link href="/pages"><span>Pages</span></Link></li>
+            <li><Link href="/pricing"><span>Pricing</span></Link></li>
           </ul>
         </nav>
 
